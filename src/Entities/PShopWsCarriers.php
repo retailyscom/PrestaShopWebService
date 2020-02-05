@@ -23,6 +23,15 @@ class PShopWsCarriers extends PShopWs
         return ServiceSimpleXmlToArray::takeMultiple($objects->carriers->carrier);
     }
 
+    public function getListBy()
+    {
+        $options['resource'] = 'carriers';
+        $options['display'] = 'full';
+        $objects = $this->get($options);
+
+        return ServiceSimpleXmlToArray::takeMultiple($objects->carriers->carrier);
+    }
+
     public function getById($id)
     {
         $options['resource'] = 'carriers';
