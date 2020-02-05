@@ -35,7 +35,7 @@ class PShopWsProductFeatureValues extends PShopWs
     public function getByIdFeature($idFeature)
     {
         $options['resource'] = 'product_feature_values';
-        $options['id_feature'] = $idFeature;
+        $options['filter[id_feature]'] = $idFeature;
         $object = $this->get($options);
 
         return ServiceSimpleXmlToArray::take($object->product_feature_value);
