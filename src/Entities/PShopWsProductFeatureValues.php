@@ -36,9 +36,10 @@ class PShopWsProductFeatureValues extends PShopWs
     {
         $options['resource'] = 'product_feature_values';
         $options['filter[id_feature]'] = $idFeature;
+        $options['display'] = 'full';
         $object = $this->get($options);
 
-        return ServiceSimpleXmlToArray::take($object->product_feature_value);
+        return ServiceSimpleXmlToArray::takeMultiple($object->product_feature_values->product_feature_value);
     }
     
 }

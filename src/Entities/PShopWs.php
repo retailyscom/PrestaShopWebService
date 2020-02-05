@@ -87,7 +87,6 @@ abstract class PShopWs
         } else {
             $url = $this->url.'/api/';
         }
-        var_dump($url);
         return $url;
     }
 
