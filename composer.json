@@ -15,7 +15,7 @@
     "filter"
   ],
   "homepage": "https://github.com/retailyscom/PrestaShopWebService",
-  "license": "GNU-3.0",
+  "license": "MIT",
   "authors": [
     {
       "name": "Marcos Redondo",
