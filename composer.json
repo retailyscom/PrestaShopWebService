@@ -1,5 +1,5 @@
 {
-  "name": "kusflo/PshopWs",
+  "name": "retailyscom/prestashopwebservice",
   "type": "library",
   "minimum-stability": "dev",
   "description": "PHP wrapper for PrestaShop Webservices 1.7.x and 1.6.x.",
@@ -14,13 +14,18 @@
     "date",
     "filter"
   ],
-  "homepage": "https://github.com/kusflo/PrestaShopWebService",
+  "homepage": "https://github.com/retailyscom/PrestaShopWebService",
   "license": "GNU-3.0",
   "authors": [
     {
       "name": "Marcos Redondo",
       "email": "kusflo@gmail.com",
       "role": "Full-Stack Developer"
+    },
+    {
+      "name": "Jan Ruda",
+      "email": "ruda@retailys.com",
+      "homepage": "https://www.retailys.com"
     }
   ],
   "require-dev": {
