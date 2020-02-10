@@ -31,4 +31,14 @@ class PShopWsCategories extends PShopWs
 
         return ServiceSimpleXmlToArray::take($object->category);
     }
+
+    public function getListSortLevelDeep()
+    {
+        $options['resource'] = 'categories';
+        $options['display'] = 'full';
+        $options['sort'] = '[level_depth_ASC]';
+        $objects = $this->get($options);
+
+        return ServiceSimpleXmlToArray::takeMultiple($objects->categories->category);
+    }
 }
