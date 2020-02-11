@@ -51,4 +51,15 @@ class PShopWsStockAvailables extends PShopWs
 
         return ServiceSimpleXmlToArray::takeMultiple($object->stock_availables->stock_available);
     }
+
+    public function getByIdProductAndIdProductAttribute($idProduct, $idProductAttribute)
+    {
+        $options['resource'] = 'stock_availables';
+        $options['filter[id_product]'] = $idProduct;
+        $options['filter[id_product_attribute]'] = $idProductAttribute;
+        $options['display'] = 'full';
+        $object = $this->get($options);
+
+        return ServiceSimpleXmlToArray::takeMultiple($object->stock_availables->stock_available);
+    }
 }
