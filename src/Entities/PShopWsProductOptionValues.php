@@ -34,7 +34,7 @@ class PShopWsProductOptionValues extends PShopWs
 
     public function getByIdAttributeGroup($idAttributeGroup)
     {
-        $options['resource'] = 'product_feature_values';
+        $options['resource'] = 'product_option_values';
         $options['filter[id_attribute_group]'] = $idAttributeGroup;
         $options['display'] = 'full';
         $object = $this->get($options);
